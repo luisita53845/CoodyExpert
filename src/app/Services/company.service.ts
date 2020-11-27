@@ -17,4 +17,7 @@ export class CompanyService {
   createCompany(formData) {
     return this.http.post<Company>(`${this.apiURL}/company/create`, formData)
   }
+  getAll(){
+    return this.http.get(`${this.apiURL}/company/getAll`)
+  }
 }
