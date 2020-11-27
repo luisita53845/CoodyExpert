@@ -42,9 +42,9 @@ export class InicioSesionComponent implements OnInit {
           this.storageService.saveToken(dataUser['token'])
           const infoUser = this.storageService.dataUser()
           if (infoUser.role == 'Company') {
-            this.router.navigate(['/perfil/Empresa'])
+            this.router.navigate(['/homeEmpresa'])
           } else{
-            this.router.navigate(['/perfil/User'])
+            this.router.navigate(['/homeUser'])
           } 
         },
         (error) => {
@@ -62,9 +62,9 @@ export class InicioSesionComponent implements OnInit {
           this.storageService.saveToken(dataCompany['token'])
           const infoCompany = this.StorageCompanyService.dataCompany()
           if (infoCompany.role == 'Programador') {
-            this.router.navigate(['/perfil/User'])
+            this.router.navigate(['/homeUser'])
           }else{
-            this.router.navigate(['/perfil/Empresa'])
+            this.router.navigate(['/homeEmpresa'])
           } 
         },
         (error) => {
