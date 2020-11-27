@@ -1,27 +1,68 @@
-  <form action="">
+<form action="">
   <section>
     <div class="form-row" style="margin-top: 95px;">
       <div class="col-md-6 mb-3">
-        <label for="validationTooltip01">Nombre Completo*</label>
-        <input type="text" class="form-control" id="validationTooltip01" value="" required>
+        <label for="validationTooltip01">Titulo examen</label>
+        <input formControlName="tituloExamen" type="text" class="form-control" id="validationTooltip01" value=""
+          required>
         <div class="valid-tooltip">
         </div>
       </div>
-
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Correo electronico*</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-
       <div class="form-row">
-        <label for="exampleFormControlTextarea1">Pautas del examen*</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">escribir las reglas del examen</textarea>
+        <label for="exampleFormControlTextarea1">Descripcion Examen</label>
+        <textarea formControlName="descripcionExamen" class="form-control" id="exampleFormControlTextarea1"
+          rows="3">Escribir la descripcion del examen</textarea>
       </div>
     </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationTooltip01">Cargo</label>
+        <input formControlName="cargo" type="text" class="form-control" value=""
+          required>
+        <div class="valid-tooltip">
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationTooltip01">Salario</label>
+        <input formControlName="salario" type="text" class="form-control" value=""
+          required>
+        <div class="valid-tooltip">
+        </div>
+      </div>
+    </div>
+    <div class="form-row" >
+      <div class="form-group col-md-12" >
+        <label>Empresa que realiza el examen</label>
+        <input formControlName="empresa" type="text" class="form-control" value=""
+          required>
+        <div class="valid-tooltip">
+        </div>
+        <!-- <input formControlName="empresa" id="empresa" type="hidden" class="form-control" >
+        <div class="row">
+          <div class="col" *ngFor="let g of allCompany">
+              <input type="checkbox" value="{{c._id}}" (click)="saveCompany($event)">
+              <label >{{c.name}}</label>
+          </div>
+        </div> -->
+      </div>
+  </div>
+    <form>
+
+      <h3>Personalizado</h3>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Ingrese el link del examen personalizado</label>
+        <input formControlName="linkExamen" type="text" class="form-control" id="exampleFormControlInput1"
+          placeholder="Ingrese link correspondiente"
+          style=" border:transparent; border-bottom:3px solid rgb(15, 92, 105);">
+      </div>
+    </form>
+
+    <button type="submit" class="btn btn-primary my-1"> <a href="../Ofertas/Ofertas.html"
+        style="text-decoration: none; color: white;">Enviar</a></button>
   </section>
 
   <!--formulariopreguntas-->
-  <section>
+  <!-- section>
     <input class="form-control form-control-lg" type="text" placeholder="Primera pregunta">
 
     <div class="form-check form-check-inline">
@@ -95,8 +136,8 @@
       </div>
     </form>
     <br>
-    <!--formulariofinal-->
+    formulariofinal
     <button type="submit" class="btn btn-primary my-1"> <a href="../Ofertas/Ofertas.html"
         style="text-decoration: none; color: white;">Enviar</a></button>
-  </section>
+  </section> -->
 </form>
