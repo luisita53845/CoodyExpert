@@ -29,6 +29,8 @@ import { OlvidarpasswordComponent } from './Components/olvidarpassword/olvidarpa
 import { RegistroUserComponent } from './Components/registro-user/registro-user.component';
 import { TarjetasUserComponent } from './Components/tarjetas-user/tarjetas-user.component';
 import { TarjetasCompanyComponent } from './Components/tarjetas-company/tarjetas-company.component';
+import { PagosComponent } from './Components/pagos/pagos.component';
+import { PagosEmpresaComponent } from './Components/pagos-empresa/pagos-empresa.component';
 
 const routesApp: Routes = [
   {path: '', component: HomePrincipalComponent},
@@ -45,11 +47,14 @@ const routesApp: Routes = [
   {path: 'homeUser', component: HomeUserComponent},
   {path: 'ModificarDatos/User', component: ModificarDatosUserComponent},
   {path: 'notificacion/User', component: NotificacionesUserComponent},
-  {path: 'perfil/User', data: { only: 'Programador' },component: PerfilUserComponent},
+  {path: 'perfil/User', component: PerfilUserComponent},
   {path: 'losMejoresProgramadores/reclutar', component: ReclutadorComponent},
   {path: 'registroCompany', component: RegistroEmpresaComponent},
-  {path: 'registroUser', component: RegistroUserComponent}
-
+  {path: 'registroUser', component: RegistroUserComponent},
+  {path: 'pagos', component:PagosComponent},
+  {path: 'pagos-Empresa', component:PagosEmpresaComponent},
+  {path: 'tarjetas-user', component:TarjetasUserComponent},
+  {path: 'tarjetas-empresa', component:TarjetasCompanyComponent}
 ];
 
 @NgModule({
@@ -77,7 +82,9 @@ const routesApp: Routes = [
     OlvidarpasswordComponent,
     RegistroUserComponent,
     TarjetasUserComponent,
-    TarjetasCompanyComponent
+    TarjetasCompanyComponent,
+    PagosComponent,
+    PagosEmpresaComponent
   ],
   imports: [
     BrowserModule,
