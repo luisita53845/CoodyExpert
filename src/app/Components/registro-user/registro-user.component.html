@@ -1,38 +1,4 @@
-<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
-  <div class="container">
-    <a class="navbar-brand" routerLink="../inicioUsuario/inicioUsuario.html">
-      <img src="assets/image/homeUser/coodybackground.png" alt="" width="130px" style="margin-left:40%">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link letracolor " routerLink="/notificacion/User">Notificaciones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link letracolor" routerLink="/ModificarDatos/User">Modificar Datos</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link letracolor" routerLink="/perfil/Use">Perfil</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link letracolor " routerLink="/">Salir</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link letracolor btn btn-primary p-1 " routerLink="/plan/user" >Premium!</a>
-          </li><br>
-      </ul>
-    </div>
-  </div>
-</nav>
-<section>
-  <div class="container containerprincipal">
+ <div class="container containerprincipal">
     <div class="row">
       <div class="col-lg-6 imagen "
         style="background: linear-gradient(to right, #191b1bd9, #1d1d1aa8), url(assets/image/registroEmpresa/typewriter-801921_1280.jpg);">
@@ -50,9 +16,8 @@
               <p class="mensajeparrafo">busca tu empleo ideal!</p>
             </div>
             <div class="textLadoIcon">
-
-              <button type="submit" class="btn colorRegistro mt-3"> <a routerLink="/login"
-                  style="text-decoration: none; color: white;">Inicio Sesión!</a></button>
+              <button type="submit" class="btn colorRegistro mt-3"> 
+                <a routerLink="/login" style="text-decoration: none; color: white;">Inicio Sesión!</a></button>
             </div>
           </div>
         </div>
@@ -79,7 +44,7 @@
                 <p *ngIf="signUpForm.get('email').hasError('email')" class="error-message">El correo electronico es incorrecto </p>
               </div>
             </div>
-
+            
             <div class="form-row contenedorCompleto">
               <div class="form-group col-md-4">
                 <label for="inputCity">Número Contacto</label>
@@ -125,7 +90,7 @@
             <div class="input-group todoAceptoterminos">
               <div class="input-group-prepend">
                 <div class="input-group-text">
-                  <input type="checkbox" aria-label="Radio button for following text input">
+                  <input type="checkbox" aria-label="Radio button for following text input" onclick= "btTutorial.disabled =!this.checked">
                 </div>
               </div>
               <!-- Button trigger modal -->
@@ -234,7 +199,7 @@
             <br>
 
             <div class="contenedorCompleto">
-              <button class="btn colorBoton mt-3">Registrate</button>
+              <button class="btn colorBoton mt-3" name="btTutorial" disabled >Registrate</button>
 
             </div>
 
@@ -246,25 +211,3 @@
     </div>
   </div>
 
-
-</section>
-<div class="container-footer">
-  <div class="flex">
-    <a routerLink="https://www.facebook.com/Coody-Expert-100691765174664/?modal=admin_todo_tour"
-      style="color: rgb(245, 245, 245); font-size: 40px; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
-    <a routerLink="https://www.instagram.com/coodyexpert/"
-      style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
-    <a routerLink="https://www.youtube.com/channel/UCJjQWwyHmKPzh4hgrHy9NaQ"
-      style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-youtube"></i></a>
-  </div>
-  <div class="copyright">
-    DATOS &copy 2020 | <a routerLink="InicioAll.html">Coody Expert</a>
-  </div>
-
-  <div class="information">
-    <a routerLink=""> Información Compañia </a> |
-    <a routerLink=""> Privacidad y Politica </a> |
-    <a routerLink=""> Terminos y Condiciones </a> |
-  </div>
-
-</div>
