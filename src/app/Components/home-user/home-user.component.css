@@ -120,8 +120,8 @@ a.ejemplo1 {
 
 /* modificaciones geraldine */
 .bg-pink {
-    /* background-color: transparent; */
-    background-color: #333366;
+    background-color: transparent;
+    /* background-color: #333366; */
     transition: all 1.5s ease;
     color: white;
     font-weight: bold;

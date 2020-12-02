@@ -29,10 +29,10 @@
 
 #hero {
   /* background-image: url(assets/image/morse/Programacion32.jpg); */
-  background-size:contain;
+  background-size:cover;
   /* background-repeat:no-repeat ; */
   padding-top: 90px;
-  min-height: 500px;
+  min-height: 600px;
   color: white;
 }
 

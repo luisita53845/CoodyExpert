@@ -87,6 +87,7 @@ a.ejemplo1 {
     transition: all 1.5s ease;
     color: white;
     font-weight: bold;
+    height: 55px;
 }
 /* .main {
     background-color: #333366;

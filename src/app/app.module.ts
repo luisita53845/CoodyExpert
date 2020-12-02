@@ -51,10 +51,12 @@ const routesApp: Routes = [
   {path: 'losMejoresProgramadores/reclutar', component: ReclutadorComponent},
   {path: 'registroCompany', component: RegistroEmpresaComponent},
   {path: 'registroUser', component: RegistroUserComponent},
-  {path: 'pagos', component:PagosComponent},
-  {path: 'pagos-Empresa', component:PagosEmpresaComponent},
-  {path: 'tarjetas-user', component:TarjetasUserComponent},
-  {path: 'tarjetas-empresa', component:TarjetasCompanyComponent}
+  {path: 'pagos', component: PagosComponent},
+  {path: 'pagos-Empresa', component: PagosEmpresaComponent},
+  {path: 'tarjetas-user', component: TarjetasUserComponent},
+  {path: 'tarjetas-empresa', component:TarjetasCompanyComponent},
+  // {path: 'tarjetas-empresa', component:TarjetasCompanyComponent},
+
 ];
 
 @NgModule({

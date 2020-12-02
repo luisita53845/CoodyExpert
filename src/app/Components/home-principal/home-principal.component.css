@@ -28,7 +28,7 @@
     background: linear-gradient(180deg, #32c953d5 0%, #46c7d8c4 100%);
     color: white;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     justify-content: center;
 }
 .botonCentrar{
@@ -67,6 +67,7 @@
     transition: all 1.5s ease;
     color: white;
     font-weight:bold;
+    height: 55px;
 }
 
 .main {

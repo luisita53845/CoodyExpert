@@ -59,18 +59,17 @@
             <div class="form-row contenedorCompleto">
               <div class="form-group col-md-4">
                 <label for="inputEmail4">Número Contacto </label>
-                <input formControlName="phoneCompany" type="text" class="form-control" id="password"
+                <input formControlName="phoneCompany" type="number" class="form-control" id="password"
                   placeholder="Nueva Contraseña" required>
               </div>
               <div class="form-group col-md-4">
                 <label for="inputAddress2">Nit</label>
-                <input formControlName="nitCompany" type="text" class="form-control" placeholder="Ex: 890111000">
-                <p *ngIf="signUpForm.get('nitCompany')" class="alertaRegistro">Solo numeros sin guines ni espacios </p>
+                <input formControlName="nitCompany" type="number" class="form-control" placeholder="Ex: 890111000">
               </div>
             </div>
             <div class="form-row contenedorCompleto">
 
-              <div class="form-group col-md-6 emailclass">
+              <div class="form-group col-md-8 emailclass">
                 <label for="inputEmail4">Email</label>
                 <input formControlName="email" type="email" class="form-control" placeholder="name@example.com"
                   required>
@@ -78,7 +77,7 @@
                   incorrecto </p>
 
               </div>
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-8">
                 <label for="inputEmail4">Ingresar Contraseña</label>
                 <input formControlName="password" type="password" class="form-control" id="inputEmail4" required>
                 <p *ngIf="signUpForm.get('password').hasError('minlength')" class="error-message"> La contraseña debe ser minimo de 6 caracteres</p>
@@ -87,7 +86,7 @@
             <div class="input-group todoAceptoterminos">
               <div class="input-group-prepend">
                 <div class="input-group-text">
-                  <input type="checkbox" aria-label="Radio button for following text input">
+                  <input type="checkbox" aria-label="Radio button for following text input" onclick= "btTutorial.disabled =!this.checked">
                 </div>
               </div>
               <!-- Button trigger modal -->
@@ -196,7 +195,7 @@
             <br>
 
             <div class="contenedorCompleto">
-              <button class="btn colorBoton mt-3">Registrate</button>
+              <button class="btn colorBoton mt-3" name="btTutorial" disabled >Registrate</button>
             </div>
 
 
