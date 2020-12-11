@@ -6,87 +6,86 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './Components/menu/menu.component';
 import { FooterComponent } from './Components/footer/footer.component';
-import { HomePrincipalComponent } from './Components/home-principal/home-principal.component';
-import { BuscadorComponent } from './Components/buscador/buscador.component';
-import { PerfilEmpresaComponent } from './Components/perfil-empresa/perfil-empresa.component';
-import { NotificacionesEmpresaComponent } from './Components/notificaciones-empresa/notificaciones-empresa.component';
-import { ModificarDatosEmpresaComponent } from './Components/modificar-datos-empresa/modificar-datos-empresa.component';
-import { InicioSesionComponent } from './Components/inicio-sesion/inicio-sesion.component';
-import { CategoriasComponent } from './Components/categorias/categorias.component';
-import { ExamenOfertaComponent } from './Components/examen-oferta/examen-oferta.component';
-import { HomeEmpresaComponent } from './Components/home-empresa/home-empresa.component';
+import { HomeComponent } from './Components/home/home.component';
 import { HomeUserComponent } from './Components/home-user/home-user.component';
-import { ModificarDatosUserComponent } from './Components/modificar-datos-user/modificar-datos-user.component';
-import { NotificacionesUserComponent } from './Components/notificaciones-user/notificaciones-user.component';
-import { OfertasComponent } from './Components/ofertas/ofertas.component';
+import { HomeCompanyComponent } from './Components/home-company/home-company.component';
 import { MorseComponent } from './Components/morse/morse.component';
-import { PerfilUserComponent } from './Components/perfil-user/perfil-user.component';
-import { ReclutadorComponent } from './Components/reclutador/reclutador.component';
-import { RegistroEmpresaComponent } from './Components/registro-empresa/registro-empresa.component';
-import { OlvidarpasswordComponent } from './Components/olvidarpassword/olvidarpassword.component';
-import { RegistroUserComponent } from './Components/registro-user/registro-user.component';
-import { TarjetasUserComponent } from './Components/tarjetas-user/tarjetas-user.component';
-import { TarjetasCompanyComponent } from './Components/tarjetas-company/tarjetas-company.component';
-import { PagosComponent } from './Components/pagos/pagos.component';
-import { PagosEmpresaComponent } from './Components/pagos-empresa/pagos-empresa.component';
+import { LoginComponent } from './Components/login/login.component';
+import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
+import { RegisterCompanyComponent } from './Components/register-company/register-company.component';
+import { RegisterUserComponent } from './Components/register-user/register-user.component';
+import { UpdateDataCompanyComponent } from './Components/update-data-company/update-data-company.component';
+import { UpdateDataUserComponent } from './Components/update-data-user/update-data-user.component';
+import { OffersComponent } from './Components/offers/offers.component';
+import { RecruiterComponent } from './Components/recruiter/recruiter.component';
+import { NotificationCompanyComponent } from './Components/notification-company/notification-company.component';
+import { NotificationUserComponent } from './Components/notification-user/notification-user.component';
+import { ProfileCompanyComponent } from './Components/profile-company/profile-company.component';
+import { ProfileUserComponent } from './Components/profile-user/profile-user.component';
+import { PaymentComponent } from './Components/payment/payment.component';
+import { PaymentCompanyComponent } from './Components/payment-company/payment-company.component';
+import { CardsUserComponent } from './Components/cards-user/cards-user.component';
+import { CardsCompanyComponent } from './Components/cards-company/cards-company.component';
+
+import { SearcherComponent } from './Components/searcher/searcher.component';
+import { CategoriesComponent } from './Components/categories/categories.component';
+import { OfferExamComponent } from './Components/offer-exam/offer-exam.component';
 
 const routesApp: Routes = [
-  {path: '', component: HomePrincipalComponent},
-  {path: 'perfil/Empresa', component: PerfilEmpresaComponent},
-  {path: 'login', component: InicioSesionComponent},
-  {path: 'nosotros', component: MorseComponent},
-  {path: 'recuperarpassword', component: OlvidarpasswordComponent},
-  {path: 'crearOferta', component: OfertasComponent},
-  {path: 'examOferta', component: ExamenOfertaComponent},
-  {path: 'notificacion/company', component: NotificacionesEmpresaComponent},
-  {path: 'modificarDatos/company', component: ModificarDatosEmpresaComponent},
-  {path: 'categorias/ofertasLaborales', component: CategoriasComponent},
-  {path: 'homeEmpresa', component: HomeEmpresaComponent},
+  {path: '', component: HomeComponent},
   {path: 'homeUser', component: HomeUserComponent},
-  {path: 'ModificarDatos/User', component: ModificarDatosUserComponent},
-  {path: 'notificacion/User', component: NotificacionesUserComponent},
-  {path: 'perfil/User', component: PerfilUserComponent},
-  {path: 'losMejoresProgramadores/reclutar', component: ReclutadorComponent},
-  {path: 'registroCompany', component: RegistroEmpresaComponent},
-  {path: 'registroUser', component: RegistroUserComponent},
-  {path: 'pagos', component: PagosComponent},
-  {path: 'pagos-Empresa', component: PagosEmpresaComponent},
-  {path: 'tarjetas-user', component: TarjetasUserComponent},
-  {path: 'tarjetas-empresa', component:TarjetasCompanyComponent},
-  // {path: 'tarjetas-empresa', component:TarjetasCompanyComponent},
+  {path: 'homeCompany', component: HomeCompanyComponent},
+  {path: 'homeCompany', component: LoginComponent},
+  {path: 'morse', component: MorseComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'ressetPassword', component: ResetPasswordComponent},
+  {path: 'registerUser', component: RegisterUserComponent},
+  {path: 'registerCompany', component: RegisterCompanyComponent},
+  {path: 'updateCompany', component: UpdateDataCompanyComponent},
+  {path: 'updateUser', component: UpdateDataUserComponent},
+  {path: 'offers', component: OffersComponent},
+  {path: 'recruiter', component: RecruiterComponent},
+  {path: 'notificationCompany', component: NotificationCompanyComponent},
+  {path: 'notificationUser', component: NotificationUserComponent},
+  {path: 'profileUser', component: ProfileUserComponent},
+  {path: 'profileCompany', component: ProfileCompanyComponent},
+  {path: 'payment', component: PaymentComponent},
+  {path: 'paymentCompany', component: PaymentCompanyComponent},
+  {path: 'cardsUser', component: CardsUserComponent},
+  {path: 'cardsCompany', component: CardsCompanyComponent},
 
+  {path: 'categories', component: CategoriesComponent},
+  {path: 'offer-exam', component: OfferExamComponent},
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     FooterComponent,
-    HomePrincipalComponent,
-    BuscadorComponent,
-    PerfilEmpresaComponent,
-    NotificacionesEmpresaComponent,
-    ModificarDatosEmpresaComponent,
-    InicioSesionComponent,
-    CategoriasComponent,
-    ExamenOfertaComponent,
-    HomeEmpresaComponent,
+    HomeComponent,
     HomeUserComponent,
-    ModificarDatosUserComponent,
-    NotificacionesUserComponent,
-    OfertasComponent,
     MorseComponent,
-    PerfilUserComponent,
-    ReclutadorComponent,
-    RegistroEmpresaComponent,
-    OlvidarpasswordComponent,
-    RegistroUserComponent,
-    TarjetasUserComponent,
-    TarjetasCompanyComponent,
-    PagosComponent,
-    PagosEmpresaComponent
+    SearcherComponent,
+    CategoriesComponent,
+    OfferExamComponent,
+    HomeCompanyComponent,
+    LoginComponent,
+    UpdateDataCompanyComponent,
+    UpdateDataUserComponent,
+    NotificationCompanyComponent,
+    NotificationUserComponent,
+    OffersComponent,
+    ResetPasswordComponent,
+    PaymentComponent,
+    PaymentCompanyComponent,
+    ProfileCompanyComponent,
+    ProfileUserComponent,
+    RecruiterComponent,
+    RegisterCompanyComponent,
+    RegisterUserComponent,
+    CardsUserComponent,
+    CardsCompanyComponent
   ],
   imports: [
     BrowserModule,
